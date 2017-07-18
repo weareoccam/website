@@ -30,7 +30,7 @@
   text-align: center;
   margin-bottom: $spacing-small;
   line-height: $heading-line-height-tight;
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-regular;
   color: $white;
 
   @include mq(medium-up) {
@@ -46,7 +46,7 @@
   color: $white;
   // max-width: 700px;
   margin-bottom: $spacing-medium;
-  @include font-size($h4-font-size);
+  // @include font-size($h4-font-size);
 
   @include mq(small-up) {
     margin-bottom: $spacing-large;

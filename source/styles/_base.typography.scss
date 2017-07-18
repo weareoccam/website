@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: $font-family;
+  font-family: $sans-serif-font-family;
   font-weight: $font-weight-regular;
   line-height: $base-line-height;
   letter-spacing: $base-letter-spacing;
@@ -19,7 +19,8 @@ body {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6  .h6,{
-  font-weight: $font-weight-bold;
+  font-family: $serif-font-family;
+  font-weight: $font-weight-regular;
   color: $headline-color;
   line-height: $heading-line-height;
 }
