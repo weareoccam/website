@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   z-index: 300;  @include vertical-padding(1.5rem);
+  // border-top: 6px solid $o-primary;
 
   @include mq(small-up) {
     @include vertical-padding(2rem);
