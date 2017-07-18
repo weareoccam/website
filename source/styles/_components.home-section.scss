@@ -1,5 +1,5 @@
 .c-home-section {
-  // background-color: $primary-color;
+  background-color: #111;
 
 
 
@@ -23,5 +23,33 @@
 
   & + &:not(.c-section--maintain-padding):not(.c-section--border) {
     padding-top: 0;
+  }
+}
+
+.c-home-section__heading {
+  margin-bottom: $spacing-small;
+  line-height: $heading-line-height-tight;
+  color: #fff;
+
+  @include mq(medium-up) {
+    margin-bottom: $spacing-medium;
+    margin-top: -$spacing-small/2; // Align heading with subheading
+  }
+}
+
+.c-home-section__subheading {
+  font-weight: $font-weight-regular;
+  line-height: $base-line-height;
+  color: #fff;
+  max-width: 700px;
+  margin-bottom: $spacing-medium;
+  @include font-size($h4-font-size);
+
+  @include mq(small-up) {
+    margin-bottom: $spacing-large;
+  }
+
+  @include mq(large-up) {
+    margin-bottom: $spacing-x-large;
   }
 }
