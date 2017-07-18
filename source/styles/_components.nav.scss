@@ -52,12 +52,13 @@
   font-weight: $font-weight-bold;
   letter-spacing: $letter-spacing-lg;
   text-transform: uppercase;
+  opacity: 0.5;
 
   font-size: 10px; // Need to fix this using respective mq's and variables
 
 
   &:hover,
   &.is-active {
-    opacity: 0.5;
+    opacity: 1;
   }
 }
