@@ -2,38 +2,24 @@
 
 sitemap_priority: 0.8
 
-social:
-  - name: twitter
-    pretty_name: Twitter
-    url: #
-  - name: instagram
-    pretty_name: Instagram
-    url: #
-  - name: dribbble
-    pretty_name: Dribbble
-    url: #
-  - name: github
-    pretty_name: GitHub
-    url: #
-  
-
 ---
 
-<!-- Intro -->
-
-<section class="c-home-section">
+<header class="c-header">
   <div class="o-container">
-    
-    <h1>Occam</h1>
-   
-    <ul class="o-list o-list--bare o-inline-list">
-      <% current_page.data.social.each do |social| %>
-        <li class=o-inline-list__item><a href="<%= social.url %>" class="c-link"><%= social.pretty_name %></a></li>
-      <% end %>
-    </ul>
-
+    <h1 class="c-header__heading">The law of briefness</h1>
+    <h2 class="c-header__subheading">Simplicity at it's finest.  We are a digital agency that partners with early stage startups and helps bring your ideas to life.</h2>
   </div>
-</section>
+</header>
+
+
+
+
+
+
+
+
+
+
 
 <% content_for :page_scripts do %>
   <%= javascript_include_tag 'home' %>

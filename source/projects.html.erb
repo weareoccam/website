@@ -6,6 +6,20 @@ projects:
   - name: stamp
     pretty_name: Stamp
     description: Create and share personalized experiences
+
+social:
+  - name: twitter
+    pretty_name: Twitter
+    url: #
+  - name: instagram
+    pretty_name: Instagram
+    url: #
+  - name: dribbble
+    pretty_name: Dribbble
+    url: #
+  - name: github
+    pretty_name: GitHub
+    url: #
 ---
 
 <header class="c-header">
@@ -20,6 +34,14 @@ projects:
     </div>
   </div>
 </header>
+
+
+   
+<ul class="o-list o-list--bare o-inline-list">
+  <% current_page.data.social.each do |social| %>
+    <li class=o-inline-list__item><a href="<%= social.url %>" class="c-link"><%= social.pretty_name %></a></li>
+  <% end %>
+</ul>
 
 <section class="c-section">
   <div class="o-container">
