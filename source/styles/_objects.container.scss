@@ -1,0 +1,29 @@
+// Container
+
+.o-container {
+  width: 100%; // Make sure container takes up full width
+  position: relative;
+  padding-left: $spacing-large;
+  padding-right: $spacing-large;
+  max-width: $container-max-width;
+  margin: 0 auto;
+
+  @include mq(small-up) {
+    padding-left: $spacing-xx-large;
+    padding-right: $spacing-xx-large;
+  }
+
+  @include mq(medium-up) {
+    padding-left: $spacing-x-large * 2;
+    padding-right: $spacing-x-large * 2;
+  }
+
+  @include mq(x-large-up) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.o-container--narrow {
+  max-width: $container-narrow-max-width;
+}

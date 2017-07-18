@@ -1,0 +1,11 @@
+// Page
+
+.c-page {
+  position: relative;
+
+  @include mq(medium-down) {
+    &.is-clipped {
+      overflow: hidden;
+    }
+  }
+}

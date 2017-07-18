@@ -1,0 +1,88 @@
+// Media queries
+
+@mixin mq($size) {
+
+  // XX-large
+
+  @if $size == xx-large-up {
+    @media (min-width: $xx-large) { @content ; }
+  }
+
+  // X-large
+
+  @if $size == x-large-up {
+    @media (min-width: $x-large) { @content ; }
+  }
+
+
+  // Large
+
+  @if $size == large-down {
+    @media (max-width: $large - 1) { @content ; }
+  }
+
+  @if $size == large-only {
+    @media (min-width: $large) and (max-width: $x-large - 1) { @content ; }
+  }
+
+  @if $size == large-up {
+    @media (min-width: $large) { @content ; }
+  }
+
+
+  // Medium
+
+  @if $size == medium-down {
+    @media (max-width: $medium - 1) { @content ; }
+  }
+
+  @if $size == medium-only {
+    @media (min-width: $medium) and (max-width: $large - 1) { @content ; }
+  }
+
+  @if $size == medium-up {
+    @media (min-width: $medium) { @content ; }
+  }
+
+
+  // Small
+
+  @if $size == small-down {
+    @media (max-width: $small - 1) { @content ; }
+  }
+
+  @if $size == small-only {
+    @media (min-width: $small) and (max-width: $medium - 1) { @content ; }
+  }
+
+  @if $size == small-up {
+    @media (min-width: $small) { @content ; }
+  }
+}
+
+
+// Vertical padding
+
+@mixin vertical-padding($padding) {
+  padding-top: $padding;
+  padding-bottom: $padding;
+}
+
+
+// Cover
+
+@mixin cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+// Square
+
+@mixin square($width) {
+  width: $width;
+  height: $width;
+}

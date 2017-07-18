@@ -1,0 +1,24 @@
+// List
+
+.o-list {
+  padding-left: $spacing-large;
+}
+
+.o-list--bare {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.o-inline-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -$spacing-small;
+}
+
+
+// Inline list
+
+.o-inline-list__item {
+  padding: $spacing-small;
+}

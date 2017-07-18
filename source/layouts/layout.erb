@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Grant Harris |<% if current_page.path == "index.html" %> Designer & Developer <% else %> <%= current_page.data.title %><% end %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="<%= current_page.data.meta_description || 'Grant Harris partners with early stage startups to help lkjasdlkjasdlkjasdlk' %>">
+
+    <%= favicon_tag '/favicon.png' %>
+    <%= stylesheet_link_tag "main" %>
+
+  </head>
+  <body class="c-page js-page">
+
+    <%= partial 'partials/nav' %>
+    <%= partial 'partials/mobile_nav' %>
+
+    <div class="c-page-content">
+      <%= yield %>
+    </div>
+
+    <%= javascript_include_tag 'vendor' %>
+    <%= javascript_include_tag 'main' %>
+    <%= yield_content :page_scripts %>
+
+    <%= partial 'partials/ga' %>
+  </body>
+</html>

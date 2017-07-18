@@ -1,0 +1,56 @@
+// Generic
+
+.c-section {
+  @include vertical-padding(3rem);
+
+  @include mq(small-up) {
+    @include vertical-padding(4rem);
+  }
+
+  @include mq(medium-up) {
+    @include vertical-padding(6rem);
+  }
+
+  @include mq(large-up) {
+    @include vertical-padding(8rem);
+  }
+
+  @include mq(x-large-up) {
+    @include vertical-padding(10rem);
+  }
+
+  & + &:not(.c-section--maintain-padding):not(.c-section--border) {
+    padding-top: 0;
+  }
+}
+
+.c-section--border {
+  border-top: 1px solid $border-color;
+}
+
+.c-section--dark {
+  background-color: $grey-dark;
+}
+
+.c-section--flush-bottom {
+  padding-bottom: 0;
+}
+
+
+// Block
+
+.c-section__block + .c-section__block{
+  padding-top: 2rem;
+
+  @include mq(small-up) {
+    padding-top: 3rem;
+  }
+
+  @include mq(medium-up) {
+    padding-top: 5rem;
+  }
+
+  @include mq(large-up) {
+    padding-top: 6rem;
+  }
+}

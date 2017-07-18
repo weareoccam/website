@@ -1,0 +1,57 @@
+.c-mobile-nav {
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $white;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 200;
+  transition: transform $animation-time $animation-curve, opacity $animation-time $animation-curve, visibility $animation-time $animation-curve;
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @include mq(medium-up) {
+    display: none;
+  }
+}
+
+.c-mobile-nav__inner {
+  padding: 6rem 0;
+  transform: translateY($spacing-large);
+  opacity: 0;
+  transition: transform $animation-time $animation-curve, opacity $animation-time $animation-curve;
+
+  .c-mobile-nav.is-open & {
+    transform: none;
+    opacity: 1;
+  }
+
+  @include mq(small-up) {
+    padding: 8rem 0;
+  }
+}
+
+.c-mobile-nav__list {
+  width: 100%;
+  margin: 0 0 $spacing-medium 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c-mobile-nav__link {
+  display: block;
+  color: $headline-color;
+  padding: $spacing-small/2 0;
+  @include font-size($h2-font-size);
+}
+
+.c-mobile-nav__link--secondary {
+  color: $body-color;
+  @include font-size($h4-font-size);
+}

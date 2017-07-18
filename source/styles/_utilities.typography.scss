@@ -1,0 +1,40 @@
+// Alignment
+
+.u-text-right {
+  text-align: right !important;
+}
+
+.u-text-left {
+  text-align: left !important;
+}
+
+.u-text-center {
+  text-align: center !important;
+}
+
+.u-text-justify {
+  text-align: justify !important;
+}
+
+.u-text-right--large-up {
+  @include mq(large-up) {
+    text-align: right !important;
+  }
+}
+
+.u-text-lead {
+  @include mq(medium-up) {
+    font-size: 1.15em;
+  }
+}
+
+
+// Colors
+
+.u-text-contrast {
+  color: $white !important;
+}
+
+.u-text-underline {
+  border-bottom: 1px solid currentColor;
+}

@@ -1,0 +1,15 @@
+<nav class="c-mobile-nav js-mobile-nav">
+  <div class="c-mobile-nav__inner">
+    <div class="o-container">
+      <ul class="c-mobile-nav__list">
+        <% data.menuElements.main_menu.each do |menuElement| %>
+          <li class="c-mobile-nav__item">
+            <a class="c-mobile-nav__link<%= (current_page.path.split('.')[0] == menuElement.href[1..-1] ? ' is-active"' : '') %>" href="<%= menuElement.href %>">
+              <%= menuElement.title %>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>

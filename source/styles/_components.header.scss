@@ -1,0 +1,46 @@
+.c-header {
+  padding-top: 9rem;
+
+  @include mq(small-up) {
+    padding-top: 12rem
+  }
+
+  @include mq(medium-up) {
+    padding-top: 16rem;
+  }
+
+  @include mq(large-up) {
+    padding-top: 18rem;
+  }
+
+  @include mq(x-large-up) {
+    padding-top: 22rem;
+  }
+}
+
+.c-header__heading {
+  margin-bottom: $spacing-small;
+  line-height: $heading-line-height-tight;
+
+  @include mq(medium-up) {
+    margin-bottom: $spacing-medium;
+    margin-top: -$spacing-small/2; // Align heading with subheading
+  }
+}
+
+.c-header__subheading {
+  font-weight: $font-weight-regular;
+  line-height: $base-line-height;
+  color: $body-color;
+  max-width: 700px;
+  margin-bottom: $spacing-medium;
+  @include font-size($h4-font-size);
+
+  @include mq(small-up) {
+    margin-bottom: $spacing-large;
+  }
+
+  @include mq(large-up) {
+    margin-bottom: $spacing-x-large;
+  }
+}

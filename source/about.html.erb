@@ -1,0 +1,15 @@
+---
+title: About
+meta_description: We're a Montreal-based digital product agency who's been designing and developing products since 2015.
+---
+
+<header class="c-header">
+  <div class="o-container">
+    <h1>Get to know us</h1>
+    <%= inline_svg("/icons/facebook.svg", class: "o-icon o-icon--brand") %>
+  </div>
+</header>
+
+<% content_for :page_scripts do %>
+  <%= javascript_include_tag 'about' %>
+<% end %>

@@ -1,0 +1,44 @@
+---
+title: Projects
+meta_description: Helping our clients bring great digital products to market is what we've been doing since our inception. Here's some of the work we're most proud of.
+
+projects:
+  - name: stamp
+    pretty_name: Stamp
+    description: Create and share personalized experiences
+---
+
+<header class="c-header">
+  <div class="o-container">
+    <div class="o-grid">
+      <div class="o-grid__item u-1/1 u-1/2@md">
+        <h1 class="c-header__heading">Selected <br class="u-hide--medium-down"> projects</h1>
+      </div>
+      <div class="o-grid__item u-1/1 u-1/2@md">
+        <h2 class="c-header__subheading">Helping our clients bring great digital products to market is what we've been doing since our inception. Here's some of the work we're most proud of.</h2>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="c-section">
+  <div class="o-container">
+    <div class="o-grid c-work-list js-project-grid">
+      <% current_page.data.projects.each do |project| %>
+        <div class="o-grid__item u-1/1 u-1/2@md u-block js-project-grid-item">
+          <a href="<% if project.future %>#1<% else %>/projects/<%= project.name %>/<% end %>" class="c-project<% if project.featured %> c-project--featured<% end %><% if project.future %> c-project--future<% end %>">
+            <div class="c-project__image" style="background-image: url('/images/projects/<%= project.name %>/<%= project.name %>-thumbnail.jpg');"></div>
+            <div class="c-project__caption">
+              <h2 class="c-project__name"><%= project.pretty_name %></h2>
+              <p class="c-project__description"><%= project.description %></p>
+            </div>
+          </a>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+<% content_for :page_scripts do %>
+  <%= javascript_include_tag 'projects' %>
+<% end %>

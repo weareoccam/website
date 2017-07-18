@@ -1,0 +1,98 @@
+// Animation
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+// Base
+
+.c-fieldset {
+  margin: -$spacing-small*1.5;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include mq(medium-up) {
+    margin: -$spacing-medium;
+  }
+
+  .c-field {
+    padding: $spacing-small*1.5;
+
+    @include mq(medium-up) {
+      padding: $spacing-medium;
+    }
+  }
+}
+
+.c-field {
+  display: block;
+  width: 100%;
+
+  &.is-invalid {
+    animation: shake 1s $animation-curve both;
+  }
+}
+
+.c-field__input-wrapper {
+  position: relative;
+}
+
+.c-field__label {
+  display: block;
+  color: $grey-light;
+  line-height: $heading-line-height; // Overwrite body line-height
+  @include font-size($small-font-size);
+}
+
+.c-field__input {
+  width: 100%;
+  padding: 0.75rem 0;
+  outline: 0;
+  font-weight: $font-weight-regular;
+  color: $grey-dark;
+  border-bottom: 1px solid $border-color;
+  transition: border-color $animation-time $animation-curve;
+  resize: none;
+  vertical-align: top;
+
+  @include mq(medium-up) {
+    padding: $spacing-medium 0;
+  }
+
+  &:focus {
+    border-bottom-color: $primary-color;
+  }
+}
+
+.c-field__input--textarea {
+  resize: vertical;
+}
+
+.c-field__input--has-right-add-on {
+  padding-right: $spacing-x-large;
+}
+
+.c-field__add-on {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &--right {
+    right: 0;
+  }
+}

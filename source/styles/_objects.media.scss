@@ -1,0 +1,30 @@
+// Media
+
+.o-media {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+
+  &--middle {
+    align-items: center;
+  }
+
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.o-media__figure {
+  flex-shrink: 0;
+  margin-right: $spacing-medium;
+
+  .o-media--reverse & {
+    margin-right: 0;
+    margin-left: $spacing-medium;
+  }
+}
+
+.o-media__body {
+  flex: 1;
+  min-width: 0; 
+}

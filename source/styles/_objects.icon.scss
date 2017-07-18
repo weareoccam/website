@@ -1,0 +1,21 @@
+// Icons
+
+.o-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.o-icon--white {
+  fill: $white;
+}
+
+.o-icon--dark {
+  fill: $grey-dark;
+}
+
+.o-icon--brand {
+  fill: $primary-color;
+}

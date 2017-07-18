@@ -1,0 +1,42 @@
+.c-hamburger {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 16px;
+}
+
+.c-hamburger__line {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: $grey-dark;
+  transition: background-color $animation-time $animation-curve, transform $animation-time $animation-curve, opacity $animation-time $animation-curve;
+
+  .c-hamburger.is-open & {
+    background-color: $grey-dark;
+  }
+
+  &:nth-child(1) {
+    .c-hamburger.is-open & {
+      transform: translate3d(0, 7px, 0) rotate3d(0, 0, 1, -135deg);
+    }
+  }
+
+  &:nth-child(2) {
+    top: 7px;
+
+    .c-hamburger.is-open & {
+      opacity: 0;
+      transform: translateX($spacing-small/2)
+    }
+  }
+
+  &:nth-child(3) {
+    top: 14px;
+
+    .c-hamburger.is-open & {
+      transform: translate3d(0, -7px, 0) rotate3d(0, 0, 1, 135deg);
+    }
+  }
+}

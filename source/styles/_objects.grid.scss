@@ -1,0 +1,75 @@
+// Grid
+
+.o-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$spacing-small;
+  margin-right: -$spacing-small;
+  margin-bottom: -$spacing-medium;
+
+  @include mq(medium-up) {
+    margin-left: -$spacing-medium;
+    margin-right: -$spacing-medium;
+    margin-bottom: -$spacing-x-large;
+  }
+
+  &--padded {
+    margin-left: -$spacing-medium;
+    margin-right: -$spacing-medium;
+    margin-bottom: -$spacing-x-large;
+
+    @include mq(medium-up) {
+      margin-left: -$spacing-large;
+      margin-right: -$spacing-large;
+      margin-bottom: -$spacing-xxx-large;
+    }
+  }
+
+  &--tight {
+    margin-left: -$spacing-small/2;
+    margin-right: -$spacing-small/2;
+    margin-bottom: -$spacing-small;
+
+    @include mq(medium-up) {
+      margin-left: -$spacing-small;
+      margin-right: -$spacing-small;
+      margin-bottom: -$spacing-medium;
+    }
+  }
+}
+
+.o-grid__item {
+  padding-left: $spacing-small;
+  padding-right: $spacing-small;
+  margin-bottom: $spacing-medium;
+
+  @include mq(medium-up) {
+    padding-left: $spacing-medium;
+    padding-right: $spacing-medium;
+    margin-bottom: $spacing-x-large;
+  }
+
+  .o-grid--padded & {
+    padding-left: $spacing-medium;
+    padding-right: $spacing-medium;
+    margin-bottom: $spacing-x-large;
+
+    @include mq(medium-up) {
+      padding-left: $spacing-large;
+      padding-right: $spacing-large;
+      margin-bottom: $spacing-xxx-large;
+    }
+  }
+
+  .o-grid--tight & {
+    padding-left: $spacing-small/2;
+    padding-right: $spacing-small/2;
+    margin-bottom: $spacing-small;
+
+    @include mq(medium-up) {
+      padding-left: $spacing-small;
+      padding-right: $spacing-small;
+      margin-bottom: $spacing-medium;
+    }
+  }
+}

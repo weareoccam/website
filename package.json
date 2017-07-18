@@ -1,0 +1,32 @@
+{
+  "name": "grantharr.is",
+  "version": "1.0.0",
+  "description": "Personal website, built on [Middleman](http://middlemanapp.com).",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vol7/volume7.io.git"
+  },
+  "author": "Grant Harris <me@grantharr.is> (http://grantharr.is/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "http://grantharr.is"
+  },
+  "homepage": "https://github.com/vol7/volume7.io#readme",
+  "dependencies": {
+    "aos": "^2.1.1",
+    "babel": "^6.5.2",
+    "babel-core": "^6.18.0",
+    "babel-loader": "^6.2.7",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-runtime": "^6.18.0",
+    "clean-webpack-plugin": "^0.1.13",
+    "cors": "^2.8.1",
+    "packery": "^2.1.1",
+    "smooth-scroll": "cferdinandi/smooth-scroll",
+    "webpack": "^1.13.3",
+    "webpack-bundle-analyzer": "^1.5.3"
+  }
+}

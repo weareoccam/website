@@ -1,0 +1,21 @@
+<nav class="c-nav js-nav">
+  <div class="o-container c-nav__container">
+    <a href="/" class="c-nav__logo">
+      Logo
+    </a>
+    <button class="c-nav__toggle u-hide--medium-up js-toggle-nav">
+      <span class="c-hamburger js-hamburger">
+        <span class="c-hamburger__line"></span>
+        <span class="c-hamburger__line"></span>
+        <span class="c-hamburger__line"></span>
+      </span>
+    </button>
+    <ul class="o-list o-list--bare c-nav__list u-hide--medium-down">
+      <% data.menuElements.main_menu.each do |menuElement| %>
+        <li class="c-nav__item">
+          <a class="c-nav__link<%= (current_page.path.split('.')[0] == menuElement.href[1..-1].gsub('/', '') ? ' is-active"' : '') %>" href="<%= menuElement.href %>"><%= menuElement.title %></a>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</nav>

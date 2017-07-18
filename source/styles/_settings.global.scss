@@ -1,0 +1,30 @@
+// Misc
+
+$base-font-size: 16px;
+$border-radius: 4px;
+
+
+// Spacing
+
+$spacing-tiny: 0.25rem;
+$spacing-small: 0.5rem;
+$spacing-medium: $spacing-small * 2;
+$spacing-large: $spacing-small * 3;
+$spacing-x-large: $spacing-small * 4;
+$spacing-xx-large: $spacing-small * 5;
+$spacing-xxx-large: $spacing-small * 6;
+
+
+// Media queries
+
+$small: 600px;
+$medium: 890px;
+$large: 1100px;
+$x-large: 1300px;
+$xx-large: 1700px;
+
+
+// Timing
+
+$animation-time: 0.3s;
+$animation-curve: cubic-bezier(0.645, 0.045, 0.355, 1);
