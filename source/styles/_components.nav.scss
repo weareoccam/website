@@ -3,8 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 300;
-  @include vertical-padding(1.5rem);
+  z-index: 300;  @include vertical-padding(1.5rem);
 
   @include mq(small-up) {
     @include vertical-padding(2rem);
@@ -47,11 +46,11 @@
 
 .c-nav__link {
   position: relative;
-  color: $body-color;
-  transition: color $animation-time $animation-curve;
+  color: $white;
+  transition: all $animation-time $animation-curve;
 
   &:hover,
   &.is-active {
-    color: $headline-color;
+    opacity: 0.5;
   }
 }

@@ -1,24 +1,24 @@
 .c-home-section {
-  background-color: #111;
+  background-color: $o-primary;
 
 
 
-  @include vertical-padding(3rem);
+  @include vertical-padding(6rem);
 
   @include mq(small-up) {
-    @include vertical-padding(4rem);
-  }
-
-  @include mq(medium-up) {
-    @include vertical-padding(6rem);
-  }
-
-  @include mq(large-up) {
     @include vertical-padding(8rem);
   }
 
-  @include mq(x-large-up) {
+  @include mq(medium-up) {
     @include vertical-padding(12rem);
+  }
+
+  @include mq(large-up) {
+    @include vertical-padding(16rem);
+  }
+
+  @include mq(x-large-up) {
+    @include vertical-padding(20rem);
   }
 
   & + &:not(.c-section--maintain-padding):not(.c-section--border) {
@@ -27,9 +27,11 @@
 }
 
 .c-home-section__heading {
+  text-align: center;
   margin-bottom: $spacing-small;
   line-height: $heading-line-height-tight;
-  color: #fff;
+  font-weight: $font-weight-light;
+  color: $white;
 
   @include mq(medium-up) {
     margin-bottom: $spacing-medium;
@@ -38,10 +40,11 @@
 }
 
 .c-home-section__subheading {
+  text-align: center;
   font-weight: $font-weight-regular;
   line-height: $base-line-height;
-  color: #fff;
-  max-width: 700px;
+  color: $white;
+  // max-width: 700px;
   margin-bottom: $spacing-medium;
   @include font-size($h4-font-size);
 
