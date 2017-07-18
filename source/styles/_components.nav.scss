@@ -48,6 +48,12 @@
   position: relative;
   color: $white;
   transition: all $animation-time $animation-curve;
+  font-weight: $font-weight-bold;
+  letter-spacing: $letter-spacing-lg;
+  text-transform: uppercase;
+
+  font-size: 10px; // Need to fix this using respective mq's and variables
+
 
   &:hover,
   &.is-active {
