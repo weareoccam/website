@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./source/scripts/pages/about.js"],"names":["console","log"],"mappings":";;;;;;;;;AAAAA,SAAQC,GAAR,CAAY,KAAZ,E","file":"scripts/about.js","sourcesContent":["console.log(\"Hey\")\n\n\n// WEBPACK FOOTER //\n// ./source/scripts/pages/about.js"],"sourceRoot":""}
