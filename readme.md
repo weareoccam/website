@@ -1,6 +1,6 @@
-# Grant Harris
+## Description
 
-Grant Harris' portfolio website, built on [Middleman](http://middlemanapp.com).
+Occam website, built on [Middleman](http://middlemanapp.com).
 
 ## Dependencies
 
