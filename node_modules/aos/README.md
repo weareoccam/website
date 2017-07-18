@@ -5,6 +5,8 @@
 [![Build Status](https://travis-ci.org/michalsnik/aos.svg?branch=master)](https://travis-ci.org/michalsnik/aos)
 [![Gitter](https://badges.gitter.im/michalsnik/aos.svg)](https://gitter.im/michalsnik/aos?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+[![Twitter Follow](https://img.shields.io/twitter/follow/michalsnik.svg?style=social)](https://twitter.com/michalsnik) [![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/home?status=AOS%20-%20Animate%20on%20Scroll%20library%0Ahttps%3A//github.com/michalsnik/aos)
+
 Small library to animate elements on your page as you scroll.
 
 You may say it's like WOWJS, yeah - you're right, effect is similar to WOWJS, but I had a different idea how to make such a plugin, so here it is. CSS3 driven scroll animation library.
@@ -82,7 +84,7 @@ AOS from version `1.2.0` is available as UMD module, so you can use it as AMD, G
 
   Script will trigger "animation_name" animation on this element, if you scroll to it.
 
-  [Down below](https://github.com/michalsnik/aos#animations) is a list of all available animations for now :)
+  [Down below](https://github.com/michalsnik/aos#-animations) is a list of all available animations for now :)
 
 ### 🔥 Advanced settings
 
@@ -116,7 +118,7 @@ Notice that double `[data-aos][data-aos]` - it's not a mistake, it is a trick, t
 `bottom-top` means that animation will be triggered when `bottom` of an element reach `top` of the window, and so on.
 Down below you can find list of all anchor-placement options.
 
-####Examples:
+#### Examples:
 
 ```html
   <div data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
@@ -129,7 +131,7 @@ Down below you can find list of all anchor-placement options.
 ```
 
 
-####API
+#### API
 
 AOS object is exposed as a global variable, for now there are three methods available:
 
@@ -220,6 +222,7 @@ If you don't want to initialize AOS on `DOMContentLoaded` event, you can pass yo
 There are serveral predefined animations you can use already:
 
   * Fade animations:
+    * fade
     * fade-up
     * fade-down
     * fade-left
