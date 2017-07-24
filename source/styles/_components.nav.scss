@@ -32,6 +32,10 @@
 
 .c-nav__logo {
   display: block;
+  font-weight: $font-weight-bold;
+  letter-spacing: -0.5px;
+  color: $white;
+  font-size: 24px;
 }
 
 .c-nav__toggle {
