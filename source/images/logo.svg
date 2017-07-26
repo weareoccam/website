@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="113.6" height="98.4" viewBox="0 0 113.6 98.4"><path d="M48.7 20.2h29.9L56.8 57.9 23.4 0H0l56.8 98.4L113.6 0H37z"></path></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="94px" height="109px" viewBox="0 0 94 109" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>occam-mark</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="website/index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-670.000000, -336.000000)" id="occam-mark" fill="#212D38">
+            <g transform="translate(646.000000, 336.000000)">
+                <path d="M85.5060398,40.816665 C85.1130129,39.3568651 84.3435357,38.0258811 83.2745989,36.9568856 C79.9035511,33.5856526 74.4380027,33.5856526 71.0669549,36.9568856 L36.961501,71.0642125 C35.8925642,72.133208 35.123087,73.4641921 34.7300601,74.9239919 C33.4905925,79.5276834 36.2176299,84.2645548 40.8210685,85.5040905 L101.970383,101.969338 L85.5060398,40.816665 Z M121,121 L37.3300058,98.4707671 C25.5656627,95.3030649 18.5965673,83.1977267 21.7640955,71.4327376 C22.7684976,67.7021379 24.7349394,64.3007342 27.4666667,61.5688568 L61.5721206,27.4615298 C70.1870206,18.8461567 84.1545332,18.8461567 92.7694332,27.4615298 C95.5011605,30.1934072 97.4676023,33.5948109 98.4720044,37.3254106 L121,121 Z" id="Rectangle-2" fill-rule="nonzero" transform="translate(71.000000, 71.000000) rotate(225.000000) translate(-71.000000, -71.000000) "></path>
+                <polygon id="Path-2" points="71 23 51 58 91 58"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

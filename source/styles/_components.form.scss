@@ -65,7 +65,7 @@
   outline: 0;
   font-weight: $font-weight-regular;
   color: $grey-dark;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid $o-dark-100;
   transition: border-color $animation-time $animation-curve;
   resize: none;
   vertical-align: top;
@@ -75,7 +75,7 @@
   }
 
   &:focus {
-    border-bottom-color: $primary-color;
+    border-bottom-color: $o-primary;
   }
 }
 

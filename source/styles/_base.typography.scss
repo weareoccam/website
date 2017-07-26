@@ -9,7 +9,7 @@ body {
   font-weight: $font-weight-regular;
   line-height: $base-line-height;
   letter-spacing: $base-letter-spacing;
-  color: $body-color;
+  color: $o-dark-100;
   -webkit-font-smoothing: antialiased;
   @include font-size($regular-font-size);
 
@@ -21,7 +21,7 @@ body {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6  .h6,{
   font-family: $serif-font-family;
   font-weight: $font-weight-regular;
-  color: $headline-color;
+  color: $o-dark-100;
   line-height: $heading-line-height;
 }
 
@@ -48,7 +48,7 @@ a {
 
 strong {
   font-weight: $font-weight-bold;
-  color: $headline-color;
+  color: $o-dark-100;
 }
 
 
