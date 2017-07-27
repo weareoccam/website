@@ -10,8 +10,6 @@
   overflow: hidden;
   transform: skewY(-8deg);
   transform-origin: 0;
-  background: $o-dark-0;
-  background-image: linear-gradient(-120deg, #EFF4F5 0%, #EDF4EE 25%, #EFF2E9 50%, #E8ECE0 75%, #F3EBEB 100%);
-  background-image: linear-gradient(#E4EFDE 0%, #D5EDF3 47%, #F3EBF2 100%);
+  background-color: $o-dark-0;
   background-image: linear-gradient(90deg, #E4EFDE 0%, #D5EDF3 100%);
 }
