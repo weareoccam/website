@@ -34,12 +34,6 @@ module.exports = {
   },
 
   plugins: [
-    new Clean(['.tmp']),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
-      filename: 'scripts/vendor.js',
-      minChunks: 2
-    }),
-    // new BundleAnalyzerPlugin()
+    new Clean(['.tmp'])
   ]
 };
