@@ -1,0 +1,32 @@
+.c-home-featured {
+  position: relative;
+  z-index: 5;
+
+  .o-container {
+    background-color: $white;
+    // border-radius: $border-radius;
+    // box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3);
+  
+    @include vertical-padding(2rem);
+
+    @include mq(small-up) {
+      @include vertical-padding(4rem);
+    }
+
+    @include mq(medium-up) {
+      @include vertical-padding(6rem);
+    }
+
+    @include mq(large-up) {
+      @include vertical-padding(8rem);
+    }
+
+    @include mq(x-large-up) {
+      @include vertical-padding(10rem);
+    }
+
+    & + &:not(.c-section--maintain-padding):not(.c-section--border) {
+      padding-top: 0;
+    }
+  }
+}
