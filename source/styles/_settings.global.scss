@@ -6,13 +6,14 @@ $border-radius: 4px;
 
 // Spacing
 
-$spacing-tiny: 0.25rem;
-$spacing-small: 0.5rem;
-$spacing-medium: $spacing-small * 2;
-$spacing-large: $spacing-small * 3;
-$spacing-x-large: $spacing-small * 4;
-$spacing-xx-large: $spacing-small * 5;
-$spacing-xxx-large: $spacing-small * 6;
+$spacing-base: 0.5rem;
+
+$spacing-small: $spacing-base / 2;
+$spacing-medium: $spacing-base;
+$spacing-large: $spacing-base * 2;
+$spacing-x-large: $spacing-base * 3;
+$spacing-xx-large: $spacing-base * 4;
+$spacing-xxx-large: $spacing-base * 5;
 
 
 // Media queries

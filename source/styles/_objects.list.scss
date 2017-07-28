@@ -1,16 +1,13 @@
 // List
 
 .o-list {
-  padding-left: $spacing-large;
-}
-
-.o-list--bare {
   margin: 0;
   padding: 0;
   list-style: none;
+  // padding-left: $spacing-large;
 }
 
-.o-inline-list {
+.o-list--inline {
   display: flex;
   flex-wrap: wrap;
   margin: -$spacing-small;

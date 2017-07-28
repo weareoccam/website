@@ -1,6 +1,7 @@
 // Generic
 
 .c-section {
+  position: relative;
   @include vertical-padding(3rem);
 
   @include mq(small-up) {

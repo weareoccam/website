@@ -28,13 +28,13 @@
 }
 
 .c-home-section__heading {
-  margin-bottom: $spacing-small;
+  margin-bottom: $spacing-large;
   line-height: $heading-line-height-tight;
   font-weight: $font-weight-regular;
   // color: $white;
 
   @include mq(medium-up) {
-    margin-bottom: $spacing-medium;
+    margin-bottom: $spacing-xxx-large;
     margin-top: -$spacing-small/2; // Align heading with subheading
   }
 }
@@ -50,10 +50,15 @@
   // @include font-size($h4-font-size);
 
   @include mq(small-up) {
+    font-size: $small-font-size;
     margin-bottom: $spacing-large;
   }
 
   @include mq(large-up) {
     margin-bottom: $spacing-x-large;
   }
+}
+
+li {
+  font-size: $small-font-size
 }
