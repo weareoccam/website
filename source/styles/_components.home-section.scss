@@ -34,7 +34,7 @@
   // color: $white;
 
   @include mq(medium-up) {
-    margin-bottom: $spacing-xxx-large;
+    margin-bottom: $spacing-xxxx-large;
     margin-top: -$spacing-small/2; // Align heading with subheading
   }
 }
@@ -59,6 +59,14 @@
   }
 }
 
-li {
-  font-size: $small-font-size
+
+
+.c-home-section__list {
+
+  .c-home-section__list-item {
+    // font-size: $small-font-size;
+    color: $o-primary;
+    font-family: $serif-font-family;
+    font-size: 21px;
+  }
 }

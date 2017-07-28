@@ -21,6 +21,8 @@ $letter-spacing-lg: 3px;
 
 // Font sizes
 
+$small-font-size: 0.85em;
+
 $regular-font-size: (
   null: 16px,
   $medium: 17px,
@@ -28,13 +30,11 @@ $regular-font-size: (
   $x-large: 18.5px
 );
 
-$small-font-size: 0.85em;
-
 $h1-font-size: (
   null: 1.8em,
-  $medium: 2.0em,
-  $large: 2.2em,
-  $x-large: 2.4em
+  $medium: 2.4em,
+  $large: 2.6em,
+  $x-large: 3.2em
 );
 
 $h2-font-size: (

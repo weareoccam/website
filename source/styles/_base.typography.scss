@@ -78,3 +78,12 @@ h5,
 .h5 {
   @include font-size($h5-font-size);
 }
+
+// Label
+
+.label {
+  font-size: 10px;
+  font-weight: $font-weight-bold;
+  letter-spacing: $letter-spacing-lg;
+  text-transform: uppercase;
+}

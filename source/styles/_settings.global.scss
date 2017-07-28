@@ -13,7 +13,8 @@ $spacing-medium: $spacing-base;
 $spacing-large: $spacing-base * 2;
 $spacing-x-large: $spacing-base * 3;
 $spacing-xx-large: $spacing-base * 4;
-$spacing-xxx-large: $spacing-base * 5;
+$spacing-xxx-large: $spacing-base * 8;
+$spacing-xxxx-large: $spacing-base * 12;
 
 
 // Media queries
@@ -27,5 +28,5 @@ $xx-large: 1700px;
 
 // Timing
 
-$animation-time: 0.3s;
+$animation-time: 0.15s;
 $animation-curve: cubic-bezier(0.645, 0.045, 0.355, 1);
