@@ -65,8 +65,12 @@
 
   .c-home-section__list-item {
     // font-size: $small-font-size;
-    color: $o-primary;
+    // color: $o-primary;
     font-family: $serif-font-family;
     font-size: 21px;
+
+    a {
+      color: $o-primary;
+    }
   }
 }
