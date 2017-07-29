@@ -1,11 +1,12 @@
 .c-footer {
   @include transition;
   display: block;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -5;
+  position: relative;
+  // position: fixed;
+  // bottom: 0;
+  // left: 0;
+  // right: 0;
+  // z-index: -5;
   background-color: $o-dark-100;
 
   @include vertical-padding(8rem);

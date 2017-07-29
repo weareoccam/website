@@ -6,11 +6,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100% + 200px);
   height: 100%;
   overflow: hidden;
   transform: skewY(-6deg);
-  transform-origin: 0;
+  transform-origin: center;
   background-color: $o-dark-0;
   background-image: linear-gradient(90deg, #E4EFDE 0%, #D5EDF3 100%);
 }
