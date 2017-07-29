@@ -3,6 +3,11 @@
 sitemap_priority: 0.8
 
 companies:
+  - name: amazon
+    pretty_name: Amazon
+    logo: tbd
+    url: http://www.amazon.com
+    delay: 0
   - name: facebook
     pretty_name: Facebook
     logo: tbd
@@ -53,16 +58,11 @@ companies:
     logo: tbd
     url: http://www.ibm.com
     delay: 500
-  - name: aramex
-    pretty_name: Aramex
-    logo: tbd
-    url: http://www.aramex.com
-    delay: 550
   - name: tata
     pretty_name: Tata Consultancy Services
     logo: tbd
     url: http://www.tcs.com
-    delay: 600
+    delay: 550
 
 services:
   - service_title: Discovery
@@ -107,23 +107,27 @@ footer_heading: Placeholder design
 </header>
 
 <section class="c-section c-home-featured">
-  <div class="o-container o-container--wide">Featured work section (Should be a mason grid imo)</div>
+  <div class="o-slant"></div>
+  <div class="o-container o-container--wide"></div>
 </section>
 
 <section class="c-section c-section--maintain-padding">
-  <div class="o-container">
-    <div class="o-grid">
-      <% current_page.data.companies.each do |companies| %>
-        <div class="o-grid__item c-company-card u-1/2 u-1/4@md u-block">
-          <a href="<%= companies.url %>" target="_blank" data-aos="fade-up" data-aos-delay="<%= companies.delay %>"><%= companies.pretty_name %></a>
-        </div>
-      <% end %>
-    </div>
+  <div class="o-container o-container--narrow">
+    <h2>Simple by design</h2>
+    <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
   </div>
 </section>
 
 <section class="c-section">
-  <div class="o-container">Quick about the team text</div>
+  <div class="o-container">
+    <div class="o-grid">
+      <% current_page.data.companies.each do |companies| %>
+        <div class="o-grid__item c-company-card u-1/2 u-1/4@md u-block" data-aos="fade-up" data-aos-delay="<%= companies.delay %>">
+          <a href="<%= companies.url %>" target="_blank"><%= companies.pretty_name %></a>
+        </div>
+      <% end %>
+    </div>
+  </div>
 </section>
 
 

@@ -5,22 +5,37 @@
   bottom: 0;
   left: 0;
   right: 0;
-  @include vertical-padding(3rem);
   z-index: -5;
   background-color: $o-dark-100;
-  // background-color: lighten($o-dark-100, 5%);
+
+  @include vertical-padding(8rem);
+
+  @include mq(small-up) {
+    @include vertical-padding(10rem);
+  }
+
+  @include mq(medium-up) {
+    @include vertical-padding(12rem);
+  }
+
+  @include mq(large-up) {
+    @include vertical-padding(14rem);
+  }
+
+  @include mq(x-large-up) {
+    @include vertical-padding(18rem);
+  }
 
   &:hover {
     background-color: lighten($o-dark-100, 2%);
 
-    .label, h2 {
+    .label, h2, a {
       opacity: 1;
     }
   }
 
-  .label, h2 {
+  .label, h2, a {
     @include transition;
-    color: $white;
     opacity: 0.5;
   }
 }

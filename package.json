@@ -5,14 +5,14 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vol7/volume7.io.git"
+    "url": "#"
   },
   "author": "Grant Harris <me@grantharr.is> (http://grantharr.is/)",
   "license": "ISC",
   "bugs": {
     "url": "http://grantharr.is"
   },
-  "homepage": "https://github.com/vol7/volume7.io#readme",
+  "homepage": "#",
   "dependencies": {
     "aos": "^2.2.0",
     "babel": "^6.5.2",
