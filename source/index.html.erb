@@ -7,50 +7,62 @@ companies:
     pretty_name: Facebook
     logo: tbd
     url: http://www.facebook.com
+    delay: 50
   - name: grab
     pretty_name: Grab
     logo: tbd
     url: http://www.grab.com
+    delay: 100
   - name: vmware
     pretty_name: VMware
     logo: tbd
     url: http://www.vmware.com
+    delay: 150
   - name: advantech
     pretty_name: Advantech
     logo: tbd
     url: http://www.advantech.com
+    delay: 200
   - name: lenovo
     pretty_name: Lenovo
     logo: tbd
     url: http://www.lenovo.com
+    delay: 250
   - name: intel
     pretty_name: Intel
     logo: tbd
     url: http://www.intel.com
+    delay: 300
   - name: sap
     pretty_name: SAP
     logo: tbd
     url: http://www.sap.com
+    delay: 350
   - name: eurocom
     pretty_name: EUROCOM
     logo: tbd
     url: http://www.eurocom.com
+    delay: 400
   - name: orange
     pretty_name: Orange
     logo: tbd
     url: http://www.orange.com
+    delay: 450
   - name: ibm
     pretty_name: IBM
     logo: tbd
     url: http://www.ibm.com
+    delay: 500
   - name: aramex
     pretty_name: Aramex
     logo: tbd
     url: http://www.aramex.com
+    delay: 550
   - name: tata
     pretty_name: Tata Consultancy Services
     logo: tbd
     url: http://www.tcs.com
+    delay: 600
 
 services:
   - service_title: Discovery
@@ -68,7 +80,7 @@ services:
   - service_title: Consectetur
     url: tbd
 
-footer_heading: Get in touch
+footer_heading: Placeholder design
 
 
 
@@ -94,22 +106,25 @@ footer_heading: Get in touch
   </div>
 </header>
 
+<section class="c-section c-home-featured">
+  <div class="o-container o-container--wide">Featured work section (Should be a mason grid imo)</div>
+</section>
 
-
-<!-- <section class="c-section">
-  <div class="o-slant"></div>
-  <div class="o-container" data-aos="fade-down">
-    <h3>Companies we've worked with</h3>
-    <p>Lorem impsum dolor amet sit consectetur</p>
+<section class="c-section c-section--maintain-padding">
+  <div class="o-container">
     <div class="o-grid">
       <% current_page.data.companies.each do |companies| %>
         <div class="o-grid__item c-company-card u-1/2 u-1/4@md u-block">
-          <a href="<%= companies.url %>" target="_blank"><%= companies.pretty_name %></a>
+          <a href="<%= companies.url %>" target="_blank" data-aos="fade-up" data-aos-delay="<%= companies.delay %>"><%= companies.pretty_name %></a>
         </div>
       <% end %>
     </div>
   </div>
-</section> -->
+</section>
+
+<section class="c-section">
+  <div class="o-container">Quick about the team text</div>
+</section>
 
 
 

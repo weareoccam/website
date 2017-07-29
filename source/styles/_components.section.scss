@@ -2,6 +2,7 @@
 
 .c-section {
   position: relative;
+  background-color: $white;
   @include vertical-padding(3rem);
 
   @include mq(small-up) {
