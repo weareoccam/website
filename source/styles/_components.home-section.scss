@@ -4,10 +4,10 @@
 
 
 
-  @include vertical-padding(6rem);
+  @include vertical-padding(8rem);
 
   @include mq(small-up) {
-    @include vertical-padding(8rem);
+    @include vertical-padding(10rem);
   }
 
   @include mq(medium-up) {
@@ -15,11 +15,11 @@
   }
 
   @include mq(large-up) {
-    @include vertical-padding(16rem);
+    @include vertical-padding(14rem);
   }
 
   @include mq(x-large-up) {
-    @include vertical-padding(20rem);
+    @include vertical-padding(18rem);
   }
 
   & + &:not(.c-section--maintain-padding):not(.c-section--border) {

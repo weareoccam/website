@@ -1,6 +1,6 @@
 // Icons
 
-.o-slant {
+.o-box {
   display: block;
   position: absolute;
   top: 0;
@@ -9,7 +9,7 @@
   height: calc(100% + 200px);
   height: 100%;
   overflow: hidden;
-  transform: skewY(-6deg);
+  // transform: skewY(-8deg);
   transform-origin: 0;
   background-color: $o-dark-0;
   background-image: linear-gradient(90deg, #E4EFDE 0%, #D5EDF3 100%);

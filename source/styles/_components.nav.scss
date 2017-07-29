@@ -8,14 +8,16 @@
   @include vertical-padding(1.5rem);
 
   @include mq(small-up) {
-    @include vertical-padding(5rem);
+    @include vertical-padding(2rem);
   }
 
   @include mq(medium-up) {
+    @include vertical-padding(3rem)
     // margin-top: 1rem;
   }
 
   @include mq(large-up) {
+    @include vertical-padding(5rem)
     // margin-top: 2rem;
   }
 
@@ -47,7 +49,7 @@
 
 .c-nav__item {
   display: inline-block;
-  margin-left: 1.5rem;
+  margin-left: $spacing-x-large;
 }
 
 .c-nav__link {
