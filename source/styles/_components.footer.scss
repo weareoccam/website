@@ -1,3 +1,26 @@
 .c-footer {
-  @include vertical-padding(5rem);
+  @include transition;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  @include vertical-padding(3rem);
+  z-index: -5;
+  background-color: $o-dark-100;
+  // background-color: lighten($o-dark-100, 5%);
+
+  &:hover {
+    background-color: lighten($o-dark-100, 2%);
+
+    .label, h2 {
+      opacity: 1;
+    }
+  }
+
+  .label, h2 {
+    @include transition;
+    color: $white;
+    opacity: 0.5;
+  }
 }

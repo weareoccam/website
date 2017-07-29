@@ -86,3 +86,9 @@
   width: $width;
   height: $width;
 }
+
+// Transitions
+
+@mixin transition{
+  transition: all $animation-time $animation-curve;
+}
