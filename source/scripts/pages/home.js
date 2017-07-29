@@ -1,6 +1,7 @@
 const AOS = require("aos");
 
 AOS.init({
-	duration: 300,
+	duration: 350,
 	easing: 'ease-out-cubic',
+  once: true
 });
