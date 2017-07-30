@@ -24,49 +24,97 @@ footer_heading: Lorem ipsum dolor amet
   <div class="o-container">
     <div class="o-grid o-grid--padded">
       <div class="o-grid__item u-1/1 u-1/3@md">
-        <p class="label">Lorem ipsum dolor amet</p>
-        <p>Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+        <p>Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.<br><br> Donec ullamcorper nulla non metus auctor fringilla.</p>
       </div>
       <div class="o-grid__item u-1/1 u-2/3@md">
+        <div class="c-form-tabs">
+          <div class="c-form-tabs__item c-form-tabs__item--active">Work Inquiry</div>
+          <div class="c-form-tabs__item">Say Hello</div>
+        </div>
+        <!-- Work inquiry -->
         <form action="#">
           <div class="c-fieldset">
             <div class="c-field u-1/1 u-1/2@sm">
-              <label for="" class="label">Name</label>
+              <label for="" class="c-field__label">Name</label>
               <div class="c-field__input-wrapper">
                 <input class="c-field__input type="text" required>
               </div>
             </div>
             <div class="c-field u-1/1 u-1/2@sm">
-              <label for="" class="label">Email</label>
+              <label for="" class="c-field__label">Email</label>
               <div class="c-field__input-wrapper">
                 <input class="c-field__input type="text" required>
               </div>
             </div>
             <div class="c-field u-1/1 u-1/2@sm">
-              <label for="" class="label">Budget</label>
+              <label for="" class="c-field__label">Company</label>
+              <div class="c-field__input-wrapper">
+                <input class="c-field__input type="text" required>
+              </div>
+            </div>
+            <div class="c-field u-1/1 u-1/2@sm">
+              <label for="" class="c-field__label">Interested in partnership</label>
               <div class="c-field__input-wrapper">
                 <select class="c-field__input c-field__input--select c-field__input--has-right-add-on" name="" id="" required>
-                  <option>£20,000 - £40,000</option>
-                  <option>£40,000 - £60,000</option>
-                  <option>£60,000 - £80,000</option>
-                  <option>£80,000 - £100,000</option>
-                  <option>£100,000 +</option>
+                  <option>Yes</option>
+                  <option>No</option>
                   <option>I don't know</option>
                 </select>
               </div>
             </div>
             <div class="c-field u-1/1 u-1/2@sm">
-              <label for="" class="label">Timeline</label>
+              <label for="" class="c-field__label">Budget</label>
               <div class="c-field__input-wrapper">
                 <select class="c-field__input c-field__input--select c-field__input--has-right-add-on" name="" id="" required>
+                  <option>Under £20,000</option>
+                  <option>£20,000 - £40,000</option>
+                  <option>£40,000 - £60,000</option>
+                  <option>£60,000 - £80,000</option> 
+                  <option>£80,000 - £100,000</option>
+                  <option>£100,000 or more</option>
+                </select>
+              </div>
+            </div>
+            <div class="c-field u-1/1 u-1/2@sm">
+              <label for="" class="c-field__label">Timeline</label>
+              <div class="c-field__input-wrapper">
+                <select class="c-field__input c-field__input--select c-field__input--has-right-add-on" name="" id="" required>
+                  <option>2 months or less</option>
                   <option>2 - 3 months</option>
                   <option>3 - 6 months</option>
-                  <option>6 months +</option>
+                  <option>6 months or more</option>
                 </select>
               </div>
             </div>
             <div class="c-field">
-              <label for="" class="label">Describe your project</label>
+              <label for="" class="c-field__label">Describe your project</label>
+              <div class="c-field__input-wrapper">
+                <textarea class="c-field__input c-field__input--textarea" name="" id="" required></textarea>
+              </div>
+            </div>
+            <div class="c-field">
+              <button class="c-btn c-btn--primary">Submit</button>
+            </div>
+          </div>
+        </form>
+
+        <!-- General inquiry -->
+        <form action="#">
+          <div class="c-fieldset">
+            <div class="c-field u-1/1 u-1/2@sm">
+              <label for="" class="c-field__label">Name</label>
+              <div class="c-field__input-wrapper">
+                <input class="c-field__input type="text" required>
+              </div>
+            </div>
+            <div class="c-field u-1/1 u-1/2@sm">
+              <label for="" class="c-field__label">Email</label>
+              <div class="c-field__input-wrapper">
+                <input class="c-field__input type="text" required>
+              </div>
+            </div>
+            <div class="c-field">
+              <label for="" class="c-field__label">What can we do for you</label>
               <div class="c-field__input-wrapper">
                 <textarea class="c-field__input c-field__input--textarea" name="" id="" required></textarea>
               </div>
