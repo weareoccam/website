@@ -55,7 +55,8 @@
   // @include font-size($h4-font-size);
 
   @include mq(small-up) {
-    font-size: $small-font-size;
+    font-size: 17px;
+    // font-size: $small-font-size;
     margin-bottom: $spacing-large;
   }
 
