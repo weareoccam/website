@@ -4,14 +4,17 @@
   <div class="o-box"></div>
 
   <div class="o-container">
-
     <p class="label">Want to work together?</p>
     <h2><%= current_page.data.footer_heading %></h2>
-
-    <% data.socialLinks.social.each do |writeLink| %>
-      <a href="<%= writeLink.href %>"><%= writeLink.title %></a>
-    <% end %>
-
+  </div>
+    
+  <div class="c-footer__links">
+    <div class="o-container">
+      <p class="u-inline-block">© 2017 Occam, LLC</p>
+      <% data.socialLinks.social.each do |writeLink| %>
+        <a href="<%= writeLink.href %>"><%= writeLink.title %></a>
+      <% end %>
+    </div>
   </div>
   
 </footer>

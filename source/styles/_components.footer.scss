@@ -39,4 +39,32 @@
     @include transition;
     opacity: 0.5;
   }
+
+  .c-footer__links {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    @include vertical-padding(2rem);
+    font-size: 14px;
+
+    p {
+      margin-right: $spacing-medium;
+    }
+
+    a {
+      margin-right: $spacing-small;
+
+      &:after {
+        content: '/';
+        margin-left: $spacing-small;
+      }
+
+      &:last-of-type {
+        &:after {
+          content: "";
+        }
+      }
+    }
+  }
 }
