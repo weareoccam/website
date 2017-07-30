@@ -1,2 +1,6 @@
 .c-company-card {
+  display: block;
+  @include vertical-padding(3rem);
+  text-align: center;
+  background-color: $o-primary;
 }

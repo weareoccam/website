@@ -10,12 +10,12 @@
 .o-list--inline {
   display: flex;
   flex-wrap: wrap;
-  margin: -$spacing-small;
+  margin: -$spacing-smallest;
 }
 
 
 // Inline list
 
 .o-inline-list__item {
-  padding: $spacing-small;
+  padding: $spacing-smallest;
 }
