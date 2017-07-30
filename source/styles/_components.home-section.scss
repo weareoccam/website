@@ -2,7 +2,12 @@
   // background-color: $white;
   position: relative;
 
-
+  .c-home-section__work-item {
+    display: block;
+    background-color: $o-dark-100;
+    border-radius: $border-radius;
+    height: 360px;
+  }
 
   @include vertical-padding(8rem);
 

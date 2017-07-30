@@ -106,18 +106,40 @@ footer_heading: Lorem ipsum dolor amet
   </div>
 </header>
 
-<section class="c-section c-home-featured">
+<!-- <section class="c-section c-home-featured">
   <div class="o-slant"></div>
   <div class="o-container">
     <div class="o-grid">
-      <div class="o-grid__item u-1/3" data-aos="fade-up" data-aos-delay="0">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue.</div>
-      <div class="o-grid__item u-2/3" data-aos="fade-up" data-aos-delay="100">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue.</div>
+      <div class="o-grid__item u-1/1 u-1/3@md" data-aos="fade-up" data-aos-delay="0">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue.</div>
+      <div class="o-grid__item u-1/1 u-2/3@md" data-aos="fade-up" data-aos-delay="100">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue.</div>
       <div class="o-grid__item u-1/1" data-aos="fade-up" data-aos-delay="200">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue.</div>
+    </div>
+  </div>
+</section> -->
+
+<section class="c-section c-home-section">
+  <div class="o-container">
+    <div class="o-grid o-grid--tight">
+      <div class="o-grid__item u-1/1 u-2/3@md" data-aos="fade-up" data-aos-delay="0">
+        <div class="c-home-section__work-item">
+          test
+        </div>
+      </div>
+      <div class="o-grid__item u-1/1 u-1/3@md" data-aos="fade-up" data-aos-delay="50">
+        <div class="c-home-section__work-item">
+          test
+        </div>
+      </div>
+      <div class="o-grid__item u-1/1" data-aos="fade-up" data-aos-delay="100">
+        <div class="c-home-section__work-item">
+          test
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="c-section c-section--maintain-padding">
+<section class="c-section">
   <div class="o-container o-container--narrow">
     <h2 data-aos="fade-up">Small by design</h2>
     <p data-aos="fade-up" data-aos-delay="100">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -128,7 +150,7 @@ footer_heading: Lorem ipsum dolor amet
   <div class="o-container">
     <div class="o-grid o-grid--tight">
       <% current_page.data.companies.each do |companies| %>
-        <div class="o-grid__item u-1/2 u-1/4@md u-block" data-aos="fade-up" data-aos-delay="<%= companies.delay %>">
+        <div class="o-grid__item u-1/2 u-1/3@md u-1/4@lg u-block" data-aos="fade-up" data-aos-delay="<%= companies.delay %>">
           <div class="c-company-card">
             <p><%= companies.pretty_name %></p>
           </div>

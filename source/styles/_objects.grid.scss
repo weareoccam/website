@@ -46,18 +46,18 @@
   @include mq(medium-up) {
     padding-left: $spacing-medium;
     padding-right: $spacing-medium;
-    margin-bottom: $spacing-x-large;
+    margin-bottom: $spacing-large;
   }
 
   .o-grid--padded & {
     padding-left: $spacing-medium;
     padding-right: $spacing-medium;
-    margin-bottom: $spacing-x-large;
+    margin-bottom: $spacing-large;
 
     @include mq(medium-up) {
       padding-left: $spacing-large;
       padding-right: $spacing-large;
-      margin-bottom: $spacing-xxx-large;
+      margin-bottom: $spacing-x-large;
     }
   }
 
