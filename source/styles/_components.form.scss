@@ -87,6 +87,8 @@
 
 .c-field__input--textarea {
   resize: vertical;
+  min-height: 160px;
+  line-height: $base-line-height;
 }
 
 .c-field__input--has-right-add-on {
