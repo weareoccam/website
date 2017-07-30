@@ -1,8 +1,8 @@
-.c-home-section {
+.c-top-section {
   // background-color: $white;
   position: relative;
 
-  .c-home-section__work-item {
+  .c-top-section__work-item {
     display: block;
     background-color: $o-dark-100;
     border-radius: $border-radius;
@@ -32,7 +32,7 @@
   }
 }
 
-.c-home-section__heading {
+.c-top-section__heading {
   margin-bottom: $spacing-large;
   line-height: $heading-line-height-tight;
   font-weight: $font-weight-regular;
@@ -44,7 +44,7 @@
   }
 }
 
-.c-home-section__subheading {
+.c-top-section__subheading {
   font-family: $sans-serif-font-family;
   font-weight: $font-weight-regular;
   line-height: $base-line-height;
@@ -67,9 +67,9 @@
 
 
 
-.c-home-section__list {
+.c-top-section__list {
 
-  .c-home-section__list-item {
+  .c-top-section__list-item {
     // font-size: $small-font-size;
     // color: $o-primary;
     font-family: $serif-font-family;
