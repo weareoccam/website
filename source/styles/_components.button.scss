@@ -9,7 +9,7 @@
   font-size: 85%;
   font-weight: $font-weight-bold;
   vertical-align: top;
-  border-radius: $border-radius;
+  // border-radius: $border-radius;
   transition: background-color $animation-time $animation-curve, color $animation-time $animation-curve, box-shadow $animation-time $animation-curve;
 
   @include mq(medium-up) {
