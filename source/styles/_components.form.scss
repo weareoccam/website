@@ -61,22 +61,28 @@
 
 .c-field__input {
   width: 100%;
-  padding: 0.75rem 0;
+  padding: $spacing-medium;
   outline: 0;
   font-weight: $font-weight-regular;
   color: $grey-dark;
-  border-bottom: 1px solid $o-dark-100;
   transition: border-color $animation-time $animation-curve;
   resize: none;
   vertical-align: top;
+  background-color: $o-dark-0;
+  cursor: text;
+  font-size: 17px;
 
   @include mq(medium-up) {
-    padding: $spacing-medium 0;
+    padding: $spacing-medium;
   }
 
   &:focus {
     border-bottom-color: $o-primary;
   }
+}
+
+.c-field__input--select {
+  cursor: pointer;
 }
 
 .c-field__input--textarea {
