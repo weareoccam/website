@@ -1,6 +1,7 @@
 // Container
 
 .o-container {
+  display: block;
   width: 100%; // Make sure container takes up full width
   position: relative;
   padding-left: $spacing-large;

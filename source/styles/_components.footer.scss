@@ -1,72 +1,59 @@
 .c-footer {
-  @include transition;
-  display: block;
-  position: relative;
-  // position: fixed;
-  // bottom: 0;
-  // left: 0;
-  // right: 0;
-  // z-index: -5;
+  // @include transition;
+  // display: block;
+  // position: relative;
   background-color: $o-dark-100;
-  color: $white;
+  // color: $white;
 
   @include vertical-padding(6rem);
 
-  @include mq(small-up) {
-    @include vertical-padding(6rem);
-  }
+  // @include mq(small-up) {
+  //   @include vertical-padding(6rem);
+  // }
 
-  @include mq(medium-up) {
-    @include vertical-padding(8rem);
-  }
+  // @include mq(medium-up) {
+  //   @include vertical-padding(8rem);
+  // }
 
-  @include mq(large-up) {
-    @include vertical-padding(10rem);
-  }
+  // @include mq(large-up) {
+  //   @include vertical-padding(10rem);
+  // }
 
-  @include mq(x-large-up) {
-    @include vertical-padding(12rem);
-  }
+  // @include mq(x-large-up) {
+  //   @include vertical-padding(12rem);
+  // }
 
-  &:hover {
-    background-color: lighten($o-dark-100, 2%);
+  // .label, h2, a {
+  //   @include transition;
+  //   opacity: 0.5;
+  //   color: $white;
+  // }
 
-    .label, h2, a {
-      opacity: 1;
-    }
-  }
+  // .c-footer__links {
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   @include vertical-padding(2rem);
+  //   font-size: 14px;
 
-  .label, h2, a {
-    @include transition;
-    opacity: 0.5;
-    color: $white;
-  }
+  //   p {
+  //     margin-right: $spacing-medium;
+  //   }
 
-  .c-footer__links {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    @include vertical-padding(2rem);
-    font-size: 14px;
+  //   a {
+  //     margin-right: $spacing-small;
 
-    p {
-      margin-right: $spacing-medium;
-    }
+  //     &:after {
+  //       content: '/';
+  //       margin-left: $spacing-small;
+  //     }
 
-    a {
-      margin-right: $spacing-small;
-
-      &:after {
-        content: '/';
-        margin-left: $spacing-small;
-      }
-
-      &:last-of-type {
-        &:after {
-          content: "";
-        }
-      }
-    }
-  }
+  //     &:last-of-type {
+  //       &:after {
+  //         content: "";
+  //       }
+  //     }
+  //   }
+  // }
 }

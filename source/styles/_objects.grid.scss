@@ -3,6 +3,7 @@
 .o-grid {
   display: flex;
   flex-wrap: wrap;
+  flex-basis: auto;
   margin-left: -$spacing-small;
   margin-right: -$spacing-small;
   margin-bottom: -$spacing-medium;

@@ -34,6 +34,10 @@
 
 .c-top-section--short {
   padding-bottom: 0 !important;
+
+  .c-top-section__heading {
+    margin-bottom: 0;
+  }
 }
 
 .c-top-section__heading {
