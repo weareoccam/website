@@ -32,6 +32,10 @@
   }
 }
 
+.c-top-section--short {
+  padding-bottom: 0 !important;
+}
+
 .c-top-section__heading {
   margin-bottom: $spacing-large;
   line-height: $heading-line-height-tight;
