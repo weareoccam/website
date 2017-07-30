@@ -28,8 +28,18 @@
     @include vertical-padding(12rem);
   }
 
+  &:hover {
+    background-color: lighten($o-dark-100, 2%);
+
+    .label, h2, a {
+      opacity: 1;
+    }
+  }
+
   .label, h2, a {
-    color: $white !important;
+    @include transition;
+    opacity: 0.5;
+    color: $white;
   }
 
   .c-footer__links {
