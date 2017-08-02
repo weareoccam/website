@@ -24,11 +24,11 @@ footer_heading: Lorem ipsum dolor amet
       </div>
       <div class="o-grid__item u-1/1 u-2/3@md">
         <div class="c-form-tabs" data-aos="fade-up" data-aos-delay="350">
-          <div class="c-form-tabs__item c-form-tabs__item--active">New Business</div>
-          <div class="c-form-tabs__item">Say Hello</div>
+          <div data-form-id="business" class="c-form-tabs__item c-form-tabs__item--active">New Business</div>
+          <div data-form-id="hello" class="c-form-tabs__item">Say Hello</div>
         </div>
         <!-- Work inquiry -->
-        <form action="#" data-aos="fade-up" data-aos-delay="450">
+        <form id="business" action="#" data-aos="fade-up" data-aos-delay="450">
           <div class="c-fieldset">
             <div class="c-field u-1/1 u-1/2@sm">
               <label for="" class="c-field__label">Name</label>
@@ -65,7 +65,7 @@ footer_heading: Lorem ipsum dolor amet
                   <option>Under £20,000</option>
                   <option>£20,000 - £40,000</option>
                   <option>£40,000 - £60,000</option>
-                  <option>£60,000 - £80,000</option> 
+                  <option>£60,000 - £80,000</option>
                   <option>£80,000 - £100,000</option>
                   <option>£100,000 or more</option>
                 </select>
@@ -95,7 +95,7 @@ footer_heading: Lorem ipsum dolor amet
         </form>
 
         <!-- General inquiry -->
-        <form action="#">
+        <form id="hello" action="#" data-aos="fade-up" data-aos-delay="450" style="display: none">
           <div class="c-fieldset">
             <div class="c-field u-1/1 u-1/2@sm">
               <label for="" class="c-field__label">Name</label>

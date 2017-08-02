@@ -24,6 +24,7 @@
     "babel-runtime": "^6.18.0",
     "clean-webpack-plugin": "^0.1.13",
     "cors": "^2.8.1",
+    "jquery": "^3.2.1",
     "packery": "^2.1.1",
     "smooth-scroll": "cferdinandi/smooth-scroll",
     "webpack": "^1.13.3",
