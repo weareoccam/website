@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Occam |<% if current_page.path == "index.html" %> Digital Agency <% else %> <%= current_page.data.title %><% end %></title>
+    <title>Occam |<% if current_page.path == "index.html" %> Digital Product Agency <% else %> <%= current_page.data.title %><% end %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="<%= current_page.data.meta_description || 'Occam partners with early stage startups to help bring their ideas to realization' %>">
 
@@ -18,6 +18,8 @@
     <div class="c-page-content">
       <%= yield %>
     </div>
+
+    <% if current_page.path == "contact.html" %><% else %><%= partial 'partials/footer' %><% end %>
 
     <%= javascript_include_tag 'main' %>
     <%= yield_content :page_scripts %>
