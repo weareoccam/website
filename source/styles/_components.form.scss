@@ -87,6 +87,18 @@
 
 .c-field__input--select {
   cursor: pointer;
+
+  &::after {
+    content: ' ';
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    background-color: red;
+    top: 0;
+    right: 0;
+    z-index: 999;
+  }
 }
 
 .c-field__input--textarea {
