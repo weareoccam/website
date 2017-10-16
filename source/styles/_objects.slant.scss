@@ -14,22 +14,21 @@
 
 .o-slant--top {
   top: -1600px;
-  left: 110px;
-  transform: skewY(30deg);
+  left: 80px;
+  transform: skewY(35deg);
   z-index: 0;
 }
 
 .o-slant--bottom {
-  transform: skewY(22deg);
+  transform: skewY(25deg);
+  left: -80px;
   opacity: 0.5;
   z-index: -1;
 }
 
-
 .o-slant--orange {
   background-image: linear-gradient(-120deg, #FFE8C5 0%, #FFCFBA 50%, #F2EAA8 100%);
 }
-
 
 .o-slant--green {
   background-image: linear-gradient(#E4EFDE 0%, #D5EDF3 50%, #F3EBF2 100%);

@@ -11,7 +11,6 @@ body {
   letter-spacing: $base-letter-spacing;
   color: $o-dark-100;
   -webkit-font-smoothing: antialiased;
-  @include font-size($regular-font-size);
 
   @include mq(medium-up) {
     line-height: $base-line-height * 1.1;
@@ -19,26 +18,13 @@ body {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6  .h6,{
-  font-family: $serif-font-family;
-  font-weight: $font-weight-regular;
+  margin: 0;
+  font-family: $sans-serif-font-family;
+  font-weight: $font-weight-bold;
   color: $o-dark-100;
   line-height: $heading-line-height;
-}
+  letter-spacing: $sans-serif-font-letter-spacing;
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, ul, ol {
-  margin: 0 0 0.75em 0;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-p, ul, ol {
-  margin-bottom: 1em;
-
-  @include mq(medium-up) {
-    margin-bottom: 1.5em;
-  }
 }
 
 a {
@@ -77,13 +63,4 @@ h4,
 h5,
 .h5 {
   @include font-size($h5-font-size);
-}
-
-// Label
-
-.label {
-  font-size: 10px;
-  font-weight: $font-weight-bold;
-  letter-spacing: $letter-spacing-lg;
-  text-transform: uppercase;
 }
