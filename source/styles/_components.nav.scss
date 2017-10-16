@@ -66,10 +66,13 @@
   font-size: 14px; // Need to fix this using respective mq's and variables
 
 
-  &:hover,
-  &.is-active {
+  &:hover{
     color: $o-primary;
     transform: scale(0.95);
+  }
+  
+  &.is-active {
+    color: $o-primary;
   }
 
   &:active {
