@@ -3,14 +3,26 @@
 .o-slant {
   display: block;
   position: absolute;
-  top: 0;
+  top: -1575px;
   left: 0;
   width: 100%;
-  height: 100%;
-  overflow: hidden;
-  transform: skewY(-6deg);
+  height: 2000px;
   transform-origin: center;
+  overflow: visible;
   background-color: $o-dark-0;
+}
+
+.o-slant--top {
+  top: -1600px;
+  left: 110px;
+  transform: skewY(30deg);
+  z-index: 0;
+}
+
+.o-slant--bottom {
+  transform: skewY(22deg);
+  opacity: 0.5;
+  z-index: -1;
 }
 
 
