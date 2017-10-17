@@ -2,6 +2,7 @@
 
 .c-page {
   position: relative;
+  // overflow-x: hidden;
   // background-color: $o-dark-100;
 
   @include mq(medium-down) {

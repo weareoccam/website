@@ -5,7 +5,7 @@
   position: absolute;
   top: -1575px;
   left: 0;
-  width: 100%;
+  width: 95%;
   height: 2000px;
   transform-origin: center;
   overflow: visible;
@@ -14,14 +14,14 @@
 
 .o-slant--top {
   top: -1600px;
-  left: 80px;
+  left: 5%;
   transform: skewY(35deg);
   z-index: 0;
 }
 
 .o-slant--bottom {
   transform: skewY(25deg);
-  left: -80px;
+  left: -5%;
   opacity: 0.5;
   z-index: -1;
 }
