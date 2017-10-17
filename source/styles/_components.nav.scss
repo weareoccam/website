@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 300;  
+  z-index: 999;  
 
   @include vertical-padding(1.5rem, 1.5rem);
 
@@ -12,17 +12,11 @@
   }
 
   @include mq(medium-up) {
-    @include vertical-padding(3rem, 3rem)
-    // margin-top: 1rem;
+    @include vertical-padding(3rem, 3rem);
   }
 
   @include mq(large-up) {
-    @include vertical-padding(5rem, 5rem)
-    // margin-top: 2rem;
-  }
-
-  @include mq(x-large-up) {
-    // margin-top: 2.5rem;
+    @include vertical-padding(5rem, 5rem);
   }
 }
 
@@ -33,11 +27,16 @@
 }
 
 .c-nav__logo {
+  @include transition;
   display: block;
   font-weight: $font-weight-bold;
   letter-spacing: -0.5px;
-  // color: $white;
   font-size: 24px;
+
+  &:hover {
+    transform: scale(0.95);
+    color: $o-primary;
+  }
 }
 
 .c-nav__toggle {
@@ -55,10 +54,8 @@
 .c-nav__link {
   display: inline-block;
   position: relative;
-  // color: $white;
   transition: all $animation-time $animation-curve;
   font-weight: $font-weight-bold;
-  // letter-spacing: $letter-spacing-lg;
   text-transform: lowercase;
   opacity: 1;
   padding: $spacing-medium 0;
@@ -66,16 +63,12 @@
   font-size: 14px; // Need to fix this using respective mq's and variables
 
 
-  &:hover{
+  &:hover {
     color: $o-primary;
     transform: scale(0.95);
   }
   
   &.is-active {
     color: $o-primary;
-  }
-
-  &:active {
-    // transform: scale(0.9);
   }
 }
