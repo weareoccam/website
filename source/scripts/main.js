@@ -20,10 +20,11 @@ $(window).scroll(function(){
 
   if (slideProgress > 1) slideProgress = 1;
 
-  // Fade & offset position during scroll event (via xProgress variables)
+  // Fade via scroll event (via progress variables)
   $('.c-top-section__heading').css('opacity', fadeProgress);
   $('.c-top-section__subheading').css('opacity', fadeProgress);
 
+  // Offset via scroll event (via progress variables)
   $('.c-top-section__heading').css('transform', 'translateY(' +  -0.15 * slideProgress + 'px)');
   $('.c-top-section__subheading').css('transform', 'translateY(' +  -0.15 * slideProgress + 'px)');
 
