@@ -88,6 +88,7 @@
   &:focus {
     border-color: $o-primary;
     box-shadow: 0 0 0 1px $o-primary;
+    background-color: $white;
   }
 
   @include mq(medium-up) {
