@@ -63,9 +63,9 @@
 
 // Vertical padding
 
-@mixin vertical-padding($padding) {
-  padding-top: $padding;
-  padding-bottom: $padding;
+@mixin vertical-padding($padding-top, $padding-bottom) {
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
 }
 
 

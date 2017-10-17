@@ -6,12 +6,12 @@
   flex-basis: auto;
   margin-left: -$spacing-small;
   margin-right: -$spacing-small;
-  margin-bottom: -$spacing-medium;
+  // margin-bottom: -$spacing-medium;
 
   @include mq(medium-up) {
     margin-left: -$spacing-medium;
     margin-right: -$spacing-medium;
-    margin-bottom: -$spacing-x-large;
+    // margin-bottom: -$spacing-x-large;
   }
 
   &--padded {
