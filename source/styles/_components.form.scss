@@ -58,10 +58,12 @@
 
 .c-field__label {
   display: block;
-  color: $grey-light;
+  color: $o-dark-60;
   line-height: $base-line-height;
-  font-size: 14px;
+  font-size: 14px;  // NEED TO FIX ------------------------------------------------------------------------------------
   margin-bottom: $spacing-small;
+  font-weight: $font-weight-bold;
+  text-transform: lowercase;
 }
 
 .c-field__input {
@@ -76,16 +78,14 @@
   background-color: $o-dark-0;
   cursor: text;
   font-size: 17px;
-  // border-radius: $border-radius;
-  border-bottom: 1px solid $o-dark-0;
 
   @include mq(medium-up) {
     padding: $spacing-medium;
   }
 
   &:focus {
-    border-color: $o-primary;
-    box-shadow: inset 0 -1px 0 0 $o-primary;
+    transform: scale(1.02);
+    box-shadow: 0 20px 30px 0 rgba(0,0,0,0.15);
   }
 }
 
@@ -129,7 +129,6 @@
 
 .c-form-tabs {
   display: block;
-  // border-bottom: 1px solid $grey-lightest;
   margin-bottom: $spacing-medium;
 
   .c-form-tabs__item {
@@ -138,30 +137,24 @@
     display: inline-block;
     margin-right: $spacing-large;
     margin-bottom: -1px;
-    font-size: 13px;
-    text-transform: uppercase;
+    font-size: 14px;   // NEED TO FIX ------------------------------------------------------------------------------------
+    text-transform: lowercase;
     font-weight: $font-weight-bold;
     color: $o-dark-100;
     cursor: pointer;
-    letter-spacing: 1px;
     user-select: none;
 
     &--active {
       color: $o-primary;
-      // box-shadow: inset 0 -2px 0 0 $o-primary;
+      pointer-events: none;
     }
 
     &:hover {
       // opacity: 0.5;
       color: $o-primary;
-      transform: scale(0.97);
-    }
-
-    &:active {
-      transform: scale(0.925);
+      transform: scale(0.95);
     }
   }
-
 }
 
 

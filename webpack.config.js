@@ -8,6 +8,7 @@ module.exports = {
     home: './source/scripts/pages/home.js',
     about: './source/scripts/pages/about.js',
     projects: './source/scripts/pages/projects.js',
+    contact: './source/scripts/pages/contact.js',
   },
 
   resolve: {

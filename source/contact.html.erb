@@ -39,7 +39,7 @@ title: let's build something great together
             <div class="c-field u-1/1 u-1/2@sm">
               <label for="" class="c-field__label">Name</label>
               <div class="c-field__input-wrapper">
-                <input class="c-field__input type="text" required>
+                <input id="nameField" class="c-field__input type="text" required autofocus>
               </div>
             </div>
             <div class="c-field u-1/1 u-1/2@sm">
@@ -134,5 +134,5 @@ title: let's build something great together
 <section class="c-contact-footer"></section>
 
 <% content_for :page_scripts do %>
-  <%= javascript_include_tag 'home' %>
+  <%= javascript_include_tag 'contact' %>
 <% end %>
