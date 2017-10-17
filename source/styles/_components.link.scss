@@ -1,31 +1,11 @@
 .c-link {
+  @include transition;
+  display: inline-block;
   position: relative;
-  color: $grey-dark;
-  padding-bottom: $spacing-smallest;
+  color: $o-primary;
+  letter-spacing: -0.5px;
 
-  &:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 1px;
-    width: 100%;
-    background-color: currentColor;
-    opacity: 0.25;
-    transition: opacity $animation-time $animation-curve;
-  }
-}
-
-.c-link:hover:after,
-.c-link:focus:after,
-.c-link:active:after {
-  opacity: 1;
-}
-
-.c-link--contrast {
-  color: $white;
-
-  &:after {
-    opacity: 0.4;
+  &:hover {
+    transform: scale(0.95);
   }
 }
