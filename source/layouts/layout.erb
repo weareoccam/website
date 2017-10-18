@@ -19,7 +19,7 @@
       <%= yield %>
     </div>
 
-    <%= partial 'partials/footer' %>
+    <% if current_page.path == "contact.html" %> <% else %> <%= partial 'partials/footer' %> <% end %>
 
     <%= javascript_include_tag 'main' %>
     <%= yield_content :page_scripts %>

@@ -28,6 +28,7 @@
 
 .c-nav__logo {
   @include transition;
+  // @include vertical-padding(1rem, 1rem);
   display: block;
   font-weight: $font-weight-bold;
   letter-spacing: -0.5px;
@@ -37,7 +38,10 @@
     transform: scale(0.95);
 
     .c-logo {
-      fill: $o-primary;
+      
+      path {
+        fill: $o-primary;
+      }
     }
   }
 }

@@ -1,5 +1,7 @@
 .c-logo {
-  @include transition;
-  @include vertical-padding(1rem, 1rem);
-  fill: $o-dark-100;
+
+  path {
+    @include transition;
+    fill: $o-dark-100;
+  }
 }
