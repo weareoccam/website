@@ -2,6 +2,12 @@
 
 sitemap_priority: 0.8
 
+tags:
+ - service: ios app
+ - service: ui/ux design
+ - service: website design
+ - service: branding design
+
 companies:
   - name: amazon
     pretty_name: Amazon
@@ -64,20 +70,6 @@ companies:
     url: http://www.tcs.com
     delay: 550
 
-services:
-  - service_title: Discovery & Strategy
-    url: tbd
-  - service_title: Design
-    url: tbd
-  - service_title: Development
-    url: tbd
-  - service_title: Lorem ipsum
-    url: tbd
-  - service_title: Dolor amet
-    url: tbd
-  - service_title: Consectetur
-    url: tbd
-
 footer_heading: Lorem ipsum dolor amet
 
 ---
@@ -120,9 +112,11 @@ footer_heading: Lorem ipsum dolor amet
   <div class="c-featured-banner">
     <div class="o-container">
       <p class="c-featured-label">featured partnership</p>
-      <p class="c-featured-label c-featured-label--tag">featured partnership</p>
-      <p class="c-featured-label c-featured-label--tag">featured partnership</p>
-      <p class="c-featured-label c-featured-label--tag">featured partnership</p>
+      <ul class="o-list c-tag-group">
+        <% current_page.data.tags.each do |tags| %>
+        <li class="o-list__item c-featured-label c-featured-label--tag"><%= tags.service %></li>
+        <% end %>
+      </ul>
     </div>
   </div>
   <div class="o-container">
@@ -132,9 +126,6 @@ footer_heading: Lorem ipsum dolor amet
     </div>
   </div>
 </section>
-
-
-
 
 
 

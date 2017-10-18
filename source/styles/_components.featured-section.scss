@@ -3,6 +3,8 @@
 .c-featured-section {
   @include vertical-padding(8rem, 8rem);
   position: relative;
+  background-image: url('../images/bg-image-test.jpg');
+  background-size: cover;
   background-color: $o-dark-100;
 
   @include mq(small-up) {
@@ -40,29 +42,47 @@
     color: $white;
     opacity: 0.65;
   }
+}
 
-  .c-featured-banner {
-    @include vertical-padding(1.5rem, 1.5rem);
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(255,255,255,0.05);
+.c-featured-banner {
+  @include vertical-padding(20px, 20px);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255,255,255,0.05);
 
-    .c-featured-label {
-      font-size: 10px;  // need to fix this
-      font-weight: $font-weight-bolder;
-      color: $white;
-      text-transform: uppercase;
-      letter-spacing: $letter-spacing-lg;
-      opacity: 1;
+  .o-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: auto;
+  }
 
-      &--tag {
-        display: inline-block;
-        padding: $spacing-medium;
-        background-color: rgba(255,255,255,0.1);
-        border-radius: $border-radius;
+  .c-tag-group {
+    display: inline-block;
+  }
+
+  .c-featured-label {
+    display: inline-block;
+    font-size: 10px;  // need to fix this
+    font-weight: $font-weight-bolder;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing-lg;
+    opacity: 1;
+
+    &--tag {
+      display: inline-block;
+      padding: $spacing-small;
+      background-color: rgba(255,255,255,0.1);
+      border-radius: $border-radius;
+      margin-right: 10px;
+
+      &:last-of-type {
+        margin-right: 0;
       }
     }
   }
