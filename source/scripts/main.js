@@ -7,12 +7,13 @@ document.querySelector('.js-toggle-nav').addEventListener('click', () => {
   document.querySelector('.js-hamburger').classList.toggle('is-open')
 })
 
+// Scrolling stuff
 $(window).scroll(function(){
 
   // Scroll & Window variables
   var scrollTop = $(window).scrollTop();
   var windowHeight = $(window).height();
-  var fadeProgress = 1 - (scrollTop / (0.7 * windowHeight));    // Opacity: 0; after scroll down 50% of viewport height
+  var fadeProgress = 1 - (scrollTop / (0.7 * windowHeight));    // Opacity: 0; after scroll down 70% of viewport height
   var slideProgress = 1 - (windowHeight * (scrollTop / windowHeight));  // Return desired percentage of distance scrolled
 
   // negative scrolling zero

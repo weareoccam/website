@@ -35,7 +35,10 @@
 
   &:hover {
     transform: scale(0.95);
-    color: $o-primary;
+
+    .c-logo {
+      fill: $o-primary;
+    }
   }
 }
 
@@ -65,7 +68,7 @@
 
   &:hover {
     color: $o-primary;
-    transform: scale(0.95);
+    // transform: scale(0.95);
   }
   
   &.is-active {
