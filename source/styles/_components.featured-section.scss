@@ -35,7 +35,7 @@
 
   p {
     @include font-size($h2-font-size);
-    margin-bottom: 0;
+    margin-bottom: $spacing-large;
     font-family: $sans-serif-font-family;
     font-weight: $font-weight-bold;
     line-height: $base-line-height;
@@ -73,6 +73,8 @@
     text-transform: uppercase;
     letter-spacing: $letter-spacing-lg;
     opacity: 1;
+    margin: 0;
+
 
     &--tag {
       display: inline-block;
