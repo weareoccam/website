@@ -2,6 +2,8 @@
 
 sitemap_priority: 0.8
 
+footer_heading: Lorem ipsum dolor amet
+
 tags:
  - service: ios app
  - service: ui/ux design
@@ -11,66 +13,48 @@ tags:
 companies:
   - name: amazon
     pretty_name: Amazon
-    logo: tbd
+    logo: /customer-logos/amzn.svg
     url: http://www.amazon.com
-    delay: 0
+  - name: beamery
+    pretty_name: Beamery
+    logo: /customer-logos/amzn.svg
+    url: http://www.beamery.com
   - name: facebook
     pretty_name: Facebook
-    logo: tbd
+    logo: /customer-logos/fb.svg
     url: http://www.facebook.com
-    delay: 50
   - name: grab
     pretty_name: Grab
-    logo: tbd
+    logo: /customer-logos/grab.svg
     url: http://www.grab.com
-    delay: 100
   - name: vmware
     pretty_name: VMware
-    logo: tbd
+    logo: /customer-logos/vmware.svg
     url: http://www.vmware.com
-    delay: 150
-  - name: advantech
-    pretty_name: Advantech
-    logo: tbd
-    url: http://www.advantech.com
-    delay: 200
   - name: lenovo
     pretty_name: Lenovo
-    logo: tbd
+    logo: /customer-logos/lenovo.svg
     url: http://www.lenovo.com
-    delay: 250
   - name: intel
     pretty_name: Intel
-    logo: tbd
+    logo: /customer-logos/intel.svg
     url: http://www.intel.com
-    delay: 300
   - name: sap
     pretty_name: SAP
-    logo: tbd
+    logo: /customer-logos/sap.svg
     url: http://www.sap.com
-    delay: 350
-  - name: eurocom
-    pretty_name: EUROCOM
-    logo: tbd
-    url: http://www.eurocom.com
-    delay: 400
   - name: orange
     pretty_name: Orange
-    logo: tbd
+    logo: /customer-logos/orange.svg
     url: http://www.orange.com
-    delay: 450
   - name: ibm
     pretty_name: IBM
-    logo: tbd
+    logo: /customer-logos/ibm.svg
     url: http://www.ibm.com
-    delay: 500
   - name: tata
     pretty_name: Tata Consultancy Services
-    logo: tbd
+    logo: /customer-logos/tata.svg
     url: http://www.tcs.com
-    delay: 550
-
-footer_heading: Lorem ipsum dolor amet
 
 ---
 
@@ -130,11 +114,18 @@ footer_heading: Lorem ipsum dolor amet
   <div class="o-container">
     <div class="o-grid">
       <div class="o-grid__item u-1/1 u-1/3@lg">
-        <h2>We delight our partners through<br class="u-hide--large-down"> in-depth domain expertise</h2>
+        <h2>Our team has worked with the<br class="u-hide--large-down"> worlds best brands</h2>
       </div>
       <div class="o-grid__item u-1/1 u-7/12@lg">
-        <p>Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.</p>
+        <p>Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
       </div>
+
+      <% current_page.data.companies.each do |clientGrid| %>
+        <div class="o-grid__item u-1/1 u-1/4@lg">
+          <%= inline_svg(clientGrid.logo, class: "c-client-logo") %>
+        </div>
+      <% end %>
+
     </div>
   </div>
 </section>
