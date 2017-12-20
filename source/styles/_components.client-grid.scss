@@ -1,0 +1,15 @@
+.c-company-grid {
+
+  .o-grid {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .c-client-logo {
+    margin: 0 $spacing-xxxx-large $spacing-xxx-large 0;
+
+    path, polygon, polyline, rect {
+      fill: $o-dark-100;
+    }
+  }
+}

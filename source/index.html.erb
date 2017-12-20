@@ -119,16 +119,23 @@ companies:
       <div class="o-grid__item u-1/1 u-7/12@lg">
         <p>Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="c-company-grid">
+  <div class="o-container">
+    <div class="o-grid">
 
       <% current_page.data.companies.each do |clientGrid| %>
-        <div class="o-grid__item u-1/1 u-1/4@lg">
-          <%= inline_svg(clientGrid.logo, class: "c-client-logo") %>
-        </div>
+        <%= inline_svg(clientGrid.logo, class: "c-client-logo") %>
       <% end %>
 
     </div>
   </div>
 </section>
+
+
 
 
 
