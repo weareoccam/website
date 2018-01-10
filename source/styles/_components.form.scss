@@ -54,6 +54,18 @@
 
 .c-field__input-wrapper {
   position: relative;
+
+  .c-field__input--select__arrow {
+    position: absolute;
+    top: 20px;
+    right: $spacing-medium;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 5px solid $o-dark-100;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
 }
 
 .c-field__label {
@@ -85,6 +97,10 @@
     opacity: 0.3;
   }
 
+  &:hover {
+    background-color: lighten(#F3F6FA, 1.5%);
+  }
+
   &:focus {
     border-color: $o-primary;
     box-shadow: 0 0 0 1px $o-primary;
@@ -100,7 +116,7 @@
   cursor: pointer;
 
   &::after {
-    content: ' ';
+    content: '';
     display: block;
     width: 24px;
     height: 24px;
