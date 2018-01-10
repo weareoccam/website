@@ -50,6 +50,11 @@
   &.is-invalid {
     animation: shake 1s $animation-curve both;
   }
+
+  &:last-of-type {
+    text-align: right;
+  }
+
 }
 
 .c-field__input-wrapper {

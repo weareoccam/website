@@ -1,0 +1,11 @@
+.c-notice-banner {
+  @include vertical-padding($spacing-small, $spacing-small);
+  display: block;
+  background-color: $o-primary;
+  z-index: 999;
+
+  p {
+    text-align: center;
+    color: $white;
+  }
+}
