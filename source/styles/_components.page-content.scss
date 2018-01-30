@@ -1,5 +1,8 @@
 .c-page-content {
+  position: relative;
   width: 100%;
-  // overflow: hidden;
-  // margin-bottom: 657px; //exact height of current shitty footer design, will do this via js later
+  z-index: $o-z-1;
+  margin-bottom: 496px; // will change later
+  background-color: $white;
+  box-shadow: $o-shadow-lg;
 }
