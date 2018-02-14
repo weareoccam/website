@@ -2,7 +2,10 @@
   position: relative;
   width: 100%;
   z-index: $o-z-1;
-  margin-bottom: 496px; // will change later
   background-color: $white;
   box-shadow: $o-shadow-lg;
+
+
+  // This clears the appearing footer
+  margin-bottom: 496px; // will change later
 }
