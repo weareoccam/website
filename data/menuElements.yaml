@@ -1,8 +1,6 @@
 main_menu:
-- title: Showcase
-  href: "/showcase/"
-- title: Services
-  href: "/services/"
+# - title: Showcase coming soon
+#   href: "/showcase/"
 - title: About
   href: "/about/"
 - title: Contact

@@ -4,63 +4,11 @@ sitemap_priority: 0.8
 
 footer_heading: Lorem ipsum dolor amet
 
-tags:
- - service: ios app
- - service: ui/ux design
- - service: website design
- - service: branding design
-
-companies:
-  - name: amazon
-    pretty_name: Amazon
-    logo: /customer-logos/amzn.svg
-    url: http://www.amazon.com
-  - name: beamery
-    pretty_name: Beamery
-    logo: /customer-logos/amzn.svg
-    url: http://www.beamery.com
-  - name: facebook
-    pretty_name: Facebook
-    logo: /customer-logos/fb.svg
-    url: http://www.facebook.com
-  - name: grab
-    pretty_name: Grab
-    logo: /customer-logos/grab.svg
-    url: http://www.grab.com
-  - name: vmware
-    pretty_name: VMware
-    logo: /customer-logos/vmware.svg
-    url: http://www.vmware.com
-  - name: lenovo
-    pretty_name: Lenovo
-    logo: /customer-logos/lenovo.svg
-    url: http://www.lenovo.com
-  - name: intel
-    pretty_name: Intel
-    logo: /customer-logos/intel.svg
-    url: http://www.intel.com
-  - name: sap
-    pretty_name: SAP
-    logo: /customer-logos/sap.svg
-    url: http://www.sap.com
-  - name: orange
-    pretty_name: Orange
-    logo: /customer-logos/orange.svg
-    url: http://www.orange.com
-  - name: ibm
-    pretty_name: IBM
-    logo: /customer-logos/ibm.svg
-    url: http://www.ibm.com
-  - name: tata
-    pretty_name: Tata Consultancy Services
-    logo: /customer-logos/tata.svg
-    url: http://www.tcs.com
-
 ---
 
 <header class="c-top-section">
-  <div class="o-slant o-slant--top"></div>
-  <div class="o-slant o-slant--bottom"></div>
+  <!-- <div class="o-slant o-slant--top"></div> -->
+  <!-- <div class="o-slant o-slant--bottom"></div> -->
   <div class="o-container">
     <div class="o-grid">
       <h1 class="o-grid__item u-1/1 c-top-section__heading">simplicity is the ultimate sophistication</h1>
@@ -68,15 +16,6 @@ companies:
     </div>
   </div>
 </header>
-
-<!-- Not sure if I want these in or not -->
-
-<!-- <section class="c-preview-section">
-  <div class="c-preview-card"></div>
-  <div class="c-preview-card"></div>
-  <div class="c-preview-card"></div>
-  <div class="c-preview-card"></div>
-</section> -->
 
 <section class="c-section">
   <div class="o-container">
@@ -94,24 +33,6 @@ companies:
   </div>
 </section>
 
-<section class="c-section c-featured-section">
-  <div class="c-featured-banner">
-    <div class="o-container">
-      <p class="c-featured-label">featured partnership</p>
-      <ul class="o-list c-tag-group u-hide--large-down">
-        <% current_page.data.tags.each do |tags| %>
-        <li class="o-list__item c-featured-label c-featured-label--tag"><%= tags.service %></li>
-        <% end %>
-      </ul>
-    </div>
-  </div>
-  <div class="o-container">
-    <h2>redefining ecommerce</h2>
-    <p>we worked with the amazing team at shopify to rethink the checkout experience</p>
-    <a href="#" class="c-btn c-btn--white">view project</a>
-  </div>
-</section>
-
 <section class="c-section">
   <div class="o-container">
     <div class="o-grid">
@@ -124,26 +45,6 @@ companies:
     </div>
   </div>
 </section>
-
-<section class="c-company-grid">
-  <div class="o-container">
-    <div class="o-grid">
-
-      <% current_page.data.companies.each do |clientGrid| %>
-        <%= inline_svg(clientGrid.logo, class: "c-client-logo") %>
-      <% end %>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
 
 <% content_for :page_scripts do %>
   <%= javascript_include_tag 'home' %>
